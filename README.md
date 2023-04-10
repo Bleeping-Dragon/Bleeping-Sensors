@@ -1,2 +1,2 @@
 # Bleeping-Sensors
-Rework of Bleeping Compass
+Open Source Rework of Bleeping Compass app.
