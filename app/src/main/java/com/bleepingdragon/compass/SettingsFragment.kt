@@ -62,10 +62,6 @@ class SettingsFragment : Fragment() {
         //Clear the screen always on (only used in compass fragment)
         requireActivity().window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 
-        //Make links clickable
-        binding.bleepingDragonLink.movementMethod = LinkMovementMethod.getInstance()
-        binding.privacyPolicyLink.movementMethod = LinkMovementMethod.getInstance()
-
         //Bind the actions
         binding.screenOnView.settingToggleView.setOnClickListener {
             val previousValue = SharedPreferences.GetBoolPreference("keepScreenOn", requireActivity())
@@ -80,9 +76,6 @@ class SettingsFragment : Fragment() {
         }
 
         binding.aboutView.settingTapView.setOnClickListener {
-
-            //val intent = Intent(this.context, AboutActivity::class.java)
-            //startActivity(intent)
             this.findNavController().navigate(R.id.aboutFragment)
         }
     }
@@ -100,7 +93,6 @@ class SettingsFragment : Fragment() {
         binding.detailsOnView.viewSwitch.isChecked = isDetailsActive
         binding.detailsOnView.viewSwitch.jumpDrawablesToCurrentState()
     }
-
 
 
     //Delete the bindings
