@@ -1,5 +1,6 @@
 package com.bleepingdragon.compass
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import androidx.fragment.app.Fragment
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import androidx.navigation.findNavController
 import com.bleepingdragon.compass.modules.SharedPreferences
 import com.bleepingdragon.compass.databinding.FragmentSettingsBinding
 
@@ -49,11 +51,12 @@ class SettingsFragment : Fragment() {
         //Bindings Text
         binding.screenOnView.settingTitle.text = getString(R.string.keep_screen_on)
         binding.screenOnView.viewSwitch.text = getString(R.string.keep_the_screen_on)
-        binding.aboutView.textView.text = getString(R.string.about_app_details)
 
-        binding.detailsOnView.settingTitle.text = getString(R.string.show_details)
         binding.detailsOnView.viewSwitch.text = getString(R.string.can_show_details)
         binding.aboutView.settingTitle.text = getString(R.string.about_app)
+
+        binding.detailsOnView.settingTitle.text = getString(R.string.show_details)
+        binding.aboutView.textView.text = getString(R.string.about_app_details)
 
         //Clear the screen always on (only used in compass fragment)
         requireActivity().window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
@@ -73,6 +76,12 @@ class SettingsFragment : Fragment() {
             val previousValue = SharedPreferences.GetBoolPreference("isDetailsActive", requireActivity())
             SharedPreferences.SetBoolPreference("isDetailsActive", !previousValue , this.requireActivity())
             binding.detailsOnView.viewSwitch.isChecked = !previousValue
+        }
+
+        binding.aboutView.settingTapView.setOnClickListener {
+
+            val intent = Intent(this.context, AboutActivity::class.java)
+            startActivity(intent)
         }
     }
 

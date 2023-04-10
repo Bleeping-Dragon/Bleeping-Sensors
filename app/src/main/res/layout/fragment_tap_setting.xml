@@ -4,9 +4,9 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- Setting Toggle Layout -->
+    <!-- Setting Tap Layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settingToggleView"
+        android:id="@+id/settingTapView"
         android:clickable="true"
         android:background="?attr/selectableItemBackground"
         android:layout_width="match_parent"

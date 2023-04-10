@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sensores Bleeping</string>
+    <string name="app_name">Sensores</string>
     <string name="SettingsFloatingButton">Botón de Ajustes de la Aplicación</string>
     <string name="NavItemSettings">Ajustes</string>
     <string name="NavItemCompass">Brújula</string>
