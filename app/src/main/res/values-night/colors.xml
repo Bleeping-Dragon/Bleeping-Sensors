@@ -18,4 +18,7 @@
     <color name="primary_compass">#003549</color>
     <color name="secondary">#9AAEBB</color>
     <color name="tertiary">#AEA6CE</color>
+
+    <!-- Back Navigation Icon -->
+    <color name="back_nav_icon">#FFC1E8FF</color>
 </resources>

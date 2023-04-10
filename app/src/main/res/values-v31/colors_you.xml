@@ -18,4 +18,7 @@
     <color name="primary_compass">@color/material_dynamic_primary30</color>
     <color name="secondary">@color/material_dynamic_secondary50</color>
     <color name="tertiary">@color/material_dynamic_tertiary50</color>
+
+    <!-- Back Navigation Icon -->
+    <color name="back_nav_icon">@color/material_dynamic_primary10</color>
 </resources>
