@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.bleepingdragon.compass.modules.SharedPreferences
 import com.bleepingdragon.compass.databinding.FragmentSettingsBinding
 
@@ -82,6 +83,7 @@ class SettingsFragment : Fragment() {
 
             //val intent = Intent(this.context, AboutActivity::class.java)
             //startActivity(intent)
+            this.findNavController().navigate(R.id.aboutFragment)
         }
     }
 
