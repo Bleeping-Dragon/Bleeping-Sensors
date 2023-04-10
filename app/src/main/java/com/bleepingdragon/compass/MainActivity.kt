@@ -1,6 +1,7 @@
 package com.bleepingdragon.compass
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.navigation.NavController
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     //Other
     private lateinit var binding: ActivityMainBinding
-    private lateinit var navController: Any
+    private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
 
 
@@ -46,5 +47,15 @@ class MainActivity : AppCompatActivity() {
 
         //Set the Top bar (if there is one present) to display the current fragment name
         appBarConfiguration = AppBarConfiguration(setOf(R.id.compassFragment, R.id.settingsFragment))
+
+        //Hide navbar in some fragments
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+
+            if(destination.id == R.id.aboutFragment) {
+                bottomNavigationBarView.visibility = View.GONE
+            } else {
+                bottomNavigationBarView.visibility = View.VISIBLE
+            }
+        }
     }
 }
