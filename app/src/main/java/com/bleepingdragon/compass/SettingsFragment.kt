@@ -80,8 +80,8 @@ class SettingsFragment : Fragment() {
 
         binding.aboutView.settingTapView.setOnClickListener {
 
-            val intent = Intent(this.context, AboutActivity::class.java)
-            startActivity(intent)
+            //val intent = Intent(this.context, AboutActivity::class.java)
+            //startActivity(intent)
         }
     }
 
