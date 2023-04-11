@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.bleepingdragon.compass.databinding.FragmentAboutBinding
 
 
@@ -41,6 +42,12 @@ class AboutFragment : Fragment() {
         //Make links clickable
         binding.bleepingDragonLink.movementMethod = LinkMovementMethod.getInstance()
         binding.privacyPolicyLink.movementMethod = LinkMovementMethod.getInstance()
+
+        //When clicks navigation icon
+        binding.toolbar.setNavigationOnClickListener{
+            this.findNavController().navigate(R.id.settingsFragment)
+        }
+
     }
 
 
