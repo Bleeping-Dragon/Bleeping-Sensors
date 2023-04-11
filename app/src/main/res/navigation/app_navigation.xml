@@ -9,31 +9,16 @@
         android:id="@+id/compassFragment"
         android:name="com.bleepingdragon.compass.CompassFragment"
         android:label="fragment_compass"
-        tools:layout="@layout/fragment_compass" >
-        <action
-            android:id="@+id/action_compassFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_compass" />
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.bleepingdragon.compass.SettingsFragment"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" >
-        <action
-            android:id="@+id/action_settingsFragment_to_compassFragment"
-            app:destination="@id/compassFragment" />
-        <action
-            android:id="@+id/action_settingsFragment_to_aboutFragment"
-            app:destination="@id/aboutFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.bleepingdragon.compass.AboutFragment"
         android:label="fragment_about"
-        tools:layout="@layout/fragment_about" >
-        <action
-            android:id="@+id/action_aboutFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_about" />
 
 </navigation>
