@@ -1,5 +1,6 @@
 package com.bleepingdragon.compass
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import androidx.fragment.app.Fragment
@@ -8,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.bleepingdragon.compass.databinding.FragmentAboutBinding
+import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 
 
 class AboutFragment : Fragment() {
@@ -48,8 +50,12 @@ class AboutFragment : Fragment() {
             this.findNavController().navigate(R.id.settingsFragment)
         }
 
-    }
+        //When the licenses button open licenses activity
+        binding.licensesButton.setOnClickListener{
+            startActivity(Intent(this.context, OssLicensesMenuActivity::class.java))
+        }
 
+    }
 
     //Delete the bindings
     override fun onDestroyView() {
