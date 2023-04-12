@@ -9,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.bleepingdragon.compass.databinding.FragmentAboutBinding
-import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 
 
 class AboutFragment : Fragment() {
@@ -48,11 +47,6 @@ class AboutFragment : Fragment() {
         //When clicks navigation icon
         binding.toolbar.setNavigationOnClickListener{
             this.findNavController().navigate(R.id.settingsFragment)
-        }
-
-        //When the licenses button open licenses activity
-        binding.licensesButton.setOnClickListener{
-            startActivity(Intent(this.context, OssLicensesMenuActivity::class.java))
         }
 
     }
