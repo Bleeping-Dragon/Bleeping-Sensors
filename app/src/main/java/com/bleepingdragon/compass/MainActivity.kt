@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         //Setup the bottom bar so it displays different fragments
         bottomNavigationBarView.setupWithNavController(navController)
 
-        //Set the Top bar (if there is one present) to display the current fragment name
+        //Passing each menu ID as a set of Ids because each menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(setOf(R.id.compassFragment, R.id.settingsFragment))
 
         //Hide navbar in some fragments
