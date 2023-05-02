@@ -46,7 +46,8 @@ class AboutFragment : Fragment() {
 
         //When clicks navigation icon
         binding.toolbar.setNavigationOnClickListener{
-            this.findNavController().navigate(R.id.settingsFragment)
+            val action = AboutFragmentDirections.actionAboutFragmentToSettingsFragment2()
+            findNavController().navigate(action)
         }
 
     }
