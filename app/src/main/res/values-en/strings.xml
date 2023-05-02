@@ -8,7 +8,10 @@
     <string name="keep_screen_on">Keep Screen On</string>
     <string name="keep_the_screen_on">While being on the compass screen.</string>
     <string name="compass_fragment_title">Compass</string>
-    <string name="privacy_policy"><a href="https://bleepingdragon.com/markdown/news-posts/Privacy_Bleeping_Compass/">Privacy Policy</a></string>
+    <string name="privacy_policy"><a href="https://bleepingdragon.com/markdown/privacy-policies/BleepingCompass/">Privacy Policy</a></string>
     <string name="show_details">Detailed compass</string>
     <string name="can_show_details">Can be enabled for a more precise control.</string>
+    <string name="about_title">About</string>
+    <string name="about_app">About</string>
+    <string name="about_app_details">Check more info about the app</string>
 </resources>
