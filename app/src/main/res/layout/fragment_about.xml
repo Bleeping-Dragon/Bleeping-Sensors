@@ -87,6 +87,7 @@
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
+                    android:background="@color/toolbar"
                     app:navigationIcon="@drawable/round_arrow_back_24"
                     app:navigationIconTint="@color/back_nav_icon"
                     app:title="@string/about_title" />

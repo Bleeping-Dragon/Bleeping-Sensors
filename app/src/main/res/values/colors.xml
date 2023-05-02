@@ -7,6 +7,8 @@
     <color name="nav_item">#D1E5F4</color>
     <color name="nav_ripple">#9AAEBB</color>
 
+    <color name="toolbar">#EBF1F8</color>
+
     <!-- Switch -->
     <color name="switch_track_enabled">#00668B</color>
     <color name="switch_thumb_enabled">#E0F3FF</color>
