@@ -76,7 +76,8 @@ class SettingsFragment : Fragment() {
         }
 
         binding.aboutView.settingTapView.setOnClickListener {
-            this.findNavController().navigate(R.id.aboutFragment)
+            val action = SettingsFragmentDirections.actionSettingsFragmentToAboutFragment()
+            findNavController().navigate(action)
         }
     }
 
