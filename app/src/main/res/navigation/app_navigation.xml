@@ -11,6 +11,11 @@
         android:label="fragment_compass"
         tools:layout="@layout/fragment_compass" />
     <fragment
+        android:id="@+id/tiltFragment"
+        android:name="com.bleepingdragon.compass.TiltFragment"
+        android:label="fragment_tilt"
+        tools:layout="@layout/fragment_tilt" />
+    <fragment
         android:id="@+id/settingsFragment"
         android:name="com.bleepingdragon.compass.SettingsFragment"
         android:label="fragment_settings"

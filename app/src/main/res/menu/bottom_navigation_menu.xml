@@ -7,6 +7,11 @@
         android:icon="@drawable/ic_outline_explore_24"
         android:title="@string/NavItemCompass"/>
     <item
+        android:id="@+id/tiltFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_explore_24"
+        android:title="@string/tilt"/>
+    <item
         android:id="@+id/settingsFragment"
         android:enabled="true"
         android:icon="@drawable/ic_outline_settings_24"
