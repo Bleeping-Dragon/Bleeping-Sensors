@@ -116,7 +116,12 @@ class CompassFragment : Fragment(), SensorEventListener {
 
     //When the accuracy of any sensor has changed
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-        //
+        //Switch (depending on the sensor type, update it's values)
+        if (sensor != null) {
+            when (sensor.type) {
+                Sensor.TYPE_ORIENTATION -> binding.sensorPrecisionText.text = accuracy.toString()
+            }
+        }
     }
 
 
